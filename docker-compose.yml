@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: matheus
+      POSTGRES_USER: matheus
+      POSTGRES_DB: nest_api
+      POSTGRES_HOST: localhost
+    ports:
+      - 5436:5432
+    volumes:
+      - /var/lib/postgresql/data
