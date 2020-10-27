@@ -1,7 +1,7 @@
 {
-    "type": "postgress",
+    "type": "postgres",
     "host": "localhost",
-    "port": 5432,
+    "port": 5436,
     "username": "matheus",
     "password": "matheus",
     "database": "nest_api",
