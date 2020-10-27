@@ -1,0 +1,10 @@
+{
+    "type": "postgress",
+    "host": "localhost",
+    "port": 5432,
+    "username": "matheus",
+    "password": "matheus",
+    "database": "nest_api",
+    "entities": ["dist/**/*.entity{.ts,.js}"],
+    "synchronize": true
+}
