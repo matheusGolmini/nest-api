@@ -40,4 +40,11 @@ export class UserService {
         const userUpdated = this.userRepository.create({...user, ...data})
         return userUpdated;
     }
+
+    async deletedUser(id: string): Promise<boolean> {
+        const user = await this.findUserById(id);
+        const deleted =  await this.userRepository.delete(user)
+        if(deleted) return true;
+        return false;
+    }
 }

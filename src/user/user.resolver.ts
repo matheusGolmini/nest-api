@@ -40,4 +40,12 @@ export class UserResolver {
         const user = await this.userService.updateUser(id, data);
         return user;
     }
+
+    @Mutation(() => Boolean)
+    async deleteUser(
+        @Args('id') id: string
+    ): Promise<boolean> {
+        const deleted = await this.userService.deletedUser(id);
+        return deleted;
+    }
 }
